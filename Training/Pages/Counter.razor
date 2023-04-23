@@ -1,0 +1,26 @@
+﻿@page "/counter"
+
+<PageTitle>Counter</PageTitle>
+
+<h1>Counter</h1>
+
+<p role="status">Current count: @mivariable</p>
+
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+
+<MiComponente></MiComponente>
+
+<MiComponente></MiComponente>
+
+<Test1></Test1>
+
+
+
+@code {
+    private int mivariable = 0;
+
+    private void IncrementCount()
+    {
+        mivariable += 5;
+    }
+}

@@ -1,0 +1,24 @@
+﻿<h3>Test1</h3>
+
+<div style="height:50px;weight:50px;background-color:@color"></div>
+
+<button @onclick="cambiar_color">Clik</button>
+
+@code {
+    public string color = "blue";
+
+    public void cambiar_color()
+    {
+
+        if (color == "blue")
+        {
+
+            color = "red";
+        }
+        else
+        {
+
+            color = "blue";
+        }
+    }
+}
