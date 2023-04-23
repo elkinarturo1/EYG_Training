@@ -1,0 +1,24 @@
+﻿<h3>Saludo</h3>
+
+<span>@saludar</span>
+
+<button @onclick="saludo">Clik</button>
+
+@code {
+    public string saludar = "Hola";
+
+    public void saludo()
+    {
+
+        if (saludar == "Hola")
+        {
+
+            saludar = "Adios";
+        }
+        else
+        {
+
+            saludar = "Adios";
+        }
+    }
+}
